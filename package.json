@@ -9,8 +9,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "algoliasearch": "^4.8.4",
     "core-js": "^3.8.2",
-    "nuxt": "^2.14.12"
+    "instantsearch.css": "^7.4.5",
+    "nuxt": "^2.14.12",
+    "vue-instantsearch": "^3.4.3"
   },
   "devDependencies": {}
 }
