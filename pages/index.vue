@@ -6,9 +6,9 @@
         nuxt-routing-test
       </h1>
       <div class="links">
-        <a href="/search" target="_blank" class="button--green">
+        <nuxt-link to="/search" class="button--green">
           Go to /search
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </div>
