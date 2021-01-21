@@ -31,5 +31,15 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ["vue-instantsearch", "instantsearch.js/es"]
+  },
+
+  router: {
+    parseQuery(queryString) {
+      return require("qs").parse(queryString);
+    },
+    stringifyQuery(object) {
+      var queryString = require("qs").stringify(object);
+      return queryString ? "?" + queryString : "";
+    }
   }
 };
